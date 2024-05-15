@@ -1,6 +1,6 @@
 const Toolbar = () => {
     return (
-        <toolbar>
+        <div>
 			<div className="container-fluid">
 			    <div className="container">
 			        <div className="row bg-secondary py-3 align-items-center d-lg-flex">
@@ -38,7 +38,7 @@ const Toolbar = () => {
 			        </div>
 			    </div>
 			</div>
-        </toolbar>
+        </div>
     );
 };
 
