@@ -2,6 +2,11 @@
 
 import Head from 'next/head';
 import React, { useEffect, useState } from 'react';
+import Image from 'next/image'
+
+import Customers from './components/Customers';
+import OurTeam from './components/OurTeam';
+import MainCarousel from './components/MainCarousel';
 
 export default function Home() {
 
@@ -28,7 +33,10 @@ export default function Home() {
 					rel="stylesheet" />
 			</Head>
 			<main>
-				<h1>Main page</h1>
+				<MainCarousel />
+				<OurTeam />
+				<Customers />
+				
 				<p>{data}</p>
 			</main>
 		</div>

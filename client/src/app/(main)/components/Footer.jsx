@@ -23,10 +23,9 @@ const Footer = () => {
                                 width={0}
                                 height={0}
                                 sizes="100vw"
+                                alt="payments"
                                 style={{ width: 'auto', height: '100%' }} // optional
                                 />
-
-                            {/* <Image src="/static/img/default/payments.png" alt="" title="" width="100%" height="100%" layout="responsive" objectFit="contain"/> */}
                         </div>
                     </div>
                 </div>
