@@ -27,7 +27,7 @@ exports.MarketplaceConnectionOptions = {
     port: process.env.DB_LICENS_PORT || 3306,
     user: process.env.DB_LICENSE_USER || 'root',
     password: process.env.DB_LICENSE_PASSWORD || "",
-    database: process.env.DB_LICENSE_DATABASE || "support",
+    database: process.env.DB_LICENSE_DATABASE || "rf_marketplace",
     dateStrings: [
         'DATE',
         'DATETIME'

@@ -1,5 +1,4 @@
 const mysql = require('mysql2');
-
 const Configs = require('./configs')
 
 var russianLauncherPool = mysql.createPool(Configs.RussianLauncherConnectionOptions);

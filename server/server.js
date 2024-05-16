@@ -7,6 +7,8 @@ const cookieParser = require('cookie-parser');
 const http = require('http');
 const https = require('https');
 
+const routes = require('./routes/main');
+
 // MARK: - Constants --------------------------------------------------------------------------
 
 const isProduction = process.env.ENVIRONMENT == "prod";
@@ -29,13 +31,12 @@ app.use(cookieParser());
 // MARK: - Configuring Routes --------------------------------------------------------------------------
 
 app.get("/", (request, response) => {
-    console.log("fuck that")
-});
-app.use("/api/test", (request, response) => {
     response.json({
-        message: "fuck"
-    });
+        message: "hello"
+    })
 });
+
+app.use("/api/", routes.HomeRouter);
 
 // MARK: - Starting Server --------------------------------------------------------------------------
 
